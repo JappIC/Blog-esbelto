@@ -1,6 +1,6 @@
 {
-	"name": "~TODO~",
-	"version": "0.0.1",
+	"name": "Esbelto",
+	"version": "0.0.2",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
@@ -11,5 +11,8 @@
 		"svelte": "^3.34.0",
 		"mdsvex": "^0.9.7"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"lit-element": "^2.5.1"
+	}
 }

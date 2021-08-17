@@ -1,4 +1,5 @@
 import { writable } from 'svelte/store';
+import { browser } from '$app/env';
 
 export const theme = writable([
 	{ value: "default", name:"Normal" },
@@ -7,5 +8,3 @@ export const theme = writable([
 ]);
 
 export const selectedTheme = writable();
-
-

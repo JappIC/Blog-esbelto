@@ -23,10 +23,15 @@ comments: 6
     import Pre from '$lib/Components/Fw/Pre.svelte';
     import Container from '$lib/Components/Fw/Container.svelte';
     import Headers from '$lib/Components/Headers/index.svelte';
+    import Iframe from '$lib/Components/Fw/Iframe.svelte';
 </script>
 
+
+
 <Container clas="full"> 
-    <Headers />
-    Esto esta en el body
-    <pre><code class="languege-html"><h1>Hola!!</h1></code></pre>
+    <Iframe 
+        title="Titulo del iframe"
+        src="https://carbon.now.sh/embed/"
+    />
+    
 </Container>
