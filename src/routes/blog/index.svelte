@@ -25,8 +25,9 @@
 </script>
 
 <script>
-    import Headers from '$lib/Components/Headers/index.svelte';
-    import Article from '$lib/Components/Article/index.svelte';
+    import Header from '$lib/Components/Framework/Headers/Header.svelte';
+    import Article from '$lib/Components/Framework/Articles/Article.svelte';
+    import Loading from '$lib/Components/Framework/Loading.svelte';
 
     export let posts;
 
@@ -41,15 +42,14 @@
 </svelte:head>
 
 <section class="page pg-blog">
-    <Headers 
-        titulo="Blog"
-        parrafo="Muestra las publicaciones del blog"
-    />
+    <Header title="Blog">
+        <p>Muestra las publicaciones del blog</p>
+    </Header>
 
     <!--{JSON.stringify(posts)}-->
     
-    <section class="bucle-posts">
-        {#each dateSortedPosts as { path, metadata:{ id, title, description, userName, tags, img, date, category, visits, comments, likes }} }
+    <div class="bucle-posts">
+        {#each dateSortedPosts as { path, metadata:{ id, title, description, userName, tags, img, date, category}} }
             <Article 
                 id={id}
                 title={title.substring(0, 30)+`...`}
@@ -60,14 +60,12 @@
                 img={img}
                 date={date}
                 category={category}
-                visits={visits}
-                likes={likes}
-                comments={comments}
+                bucle = true
             />
         {:else}
-            <div>No se encontraron datos</div>
+            <Loading/>
         {/each}
-    </section>
+    </div>
 </section>
 
 <style>

@@ -32,8 +32,9 @@
 </script>
 
 <script>
-    import Headers from '$lib/Components/Headers/index.svelte';
-    import Article from '$lib/Components/Article/index.svelte';
+    import Header from '$lib/Components/Framework/Headers/Header.svelte';
+    import Article from '$lib/Components/Framework/Articles/Article.svelte';
+    import Loading from '$lib/Components/Framework/Loading.svelte';
 
     export let filteredPosts;
     export let tag;
@@ -45,15 +46,14 @@
 
 <section class="page pg-tags">
     
-    <Headers 
-        titulo={`Articulos con la tag ${tag}`}
-        parrafo="Muestra las publicaciones por tags"
-    />
+    <Header title={`Articulos con la tag ${tag}`}>
+        <p>Muestra las publicaciones por tags</p>
+    </Header>
 
     <!--{JSON.stringify(posts)}-->
     
     <section class="bucle-posts">
-        {#each filteredPosts as { path, metadata:{  id, title, description, userName, tags, img, date, category, visits, comments, likes }} }
+        {#each filteredPosts as { path, metadata:{  id, title, description, userName, tags, img, date, category}} }
             <Article 
                 id={id}
                 title={title.substring(0, 30)+`...`}
@@ -64,12 +64,10 @@
                 img={img}
                 date={date}
                 category={category}
-                visits={visits}
-                likes={likes}
-                comments={comments}
+                bucle = true
             />
         {:else}
-            <div>No se encontraron datos</div>
+            <Loading/>
         {/each}
     </section>
     

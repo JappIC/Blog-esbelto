@@ -1,6 +1,11 @@
+<!--
+    Página estática:
+    Un ejemplo de como hacer una página estática en svelte.
+-->
+
 <script context="module">
 	import { browser, dev } from '$app/env';
-    import Headers from '$lib/Components/Headers/index.svelte';
+    import Headers from '$lib/Components/Framework/Headers/Header.svelte';
 	// no necesitamos ningún JS en esta página, aunque cargaremos
     // en dev para que obtengamos un reemplazo de módulo en caliente
 	export const hydrate = dev;
@@ -15,7 +20,7 @@
 </script>
 
 <script>
-    import { fly } from "svelte/transition";
+    import Container from "$lib/Components/Framework/Container.svelte";
 </script>
 
 <svelte:head>
@@ -23,13 +28,12 @@
 </svelte:head>
 
 <section class="page pg-about">
-    <!--Slot Headers-->
-    <Headers 
-        titulo="About"
-        parrafo="Una web desarrollada con el FW Svelte Kit"
-    />
+    
+    <Headers title="About">
+        <p>Una web desarrollada con el FW Svelte Kit</p>
+    </Headers>
 
-    <section in:fly={{ y:25, duration: 1500, delay: 500 }} out:fly={{ y:25, duration: 500}}>
+    <Container class="medium padding" transition=true>
         <p>
             This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
             following into your command line and following the prompts:
@@ -48,10 +52,5 @@
             The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and form handling. Try using
             it with JavaScript disabled!
         </p>
-    </section>
-    
+    </Container>
 </section>
-
-<style>
-	
-</style>

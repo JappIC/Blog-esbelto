@@ -8,7 +8,8 @@ const config = {
   "remarkPlugins": [],
   "rehypePlugins": [],
   layout: {
-      article: "./src/lib/Components/Article/index.svelte",
+      article: "./src/lib/Components/Framework/Articles/Article.svelte",
+      articleBase: "./src/lib/Components/Framework/Articles/Article2.svelte",
   }
 };
 
