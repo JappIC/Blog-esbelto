@@ -1,13 +1,13 @@
 import { writable } from 'svelte/store';
 
 export const user = writable({
-    name: "Nombre",
-    surname: "Apellido",
-    lastname: "Ape2",
-    email: "miemail@gmail.com",
+    name: "Esbelto",
+    surname: "Web",
+    lastname: "Framework",
+    email: "esbelto@miemail.com",
     phone: "666555444",
-    birthday: "1980-05-25",
-    gender: "men",
+    birthday: "2021-05-31",
+    gender: "other",
     web: "https://www.miweb.com",
     github: "https://www.github.com",
     linkedin: "https://www.linkedin.com",

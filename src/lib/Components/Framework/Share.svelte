@@ -28,13 +28,14 @@
         <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={host}{url}" target="_blank" title="Linkedin">
             <i class="fab fa-linkedin"></i>
         </a>
-        <a href="https://api.whatsapp.com/send?text=TITULO%2{host}{url}0" target="_blank" title="Whatsapp">
+        <a href="https://api.whatsapp.com/send?text=Comparto%20{host}{url}" target="_blank" title="Whatsapp">
             <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="mailto:?Subject=TITULO;Body=Vi%20este%20artÍculo%20y%20pense%20que%20te%20podia%20interesar%2{host}{url}0" title="Correo">
+        <a href="mailto:?Subject=TITULO;Body=Vi%20este%20artÍculo%20y%20pense%20que%20te%20podia%20interesar%20{host}{url}" title="Correo">
             <i class="far fa-envelope"></i>
         </a>
-        <a href="javascript;" onclick="window.print()" title="Imprimir - PDF">
+        <!-- svelte-ignore a11y-invalid-attribute -->
+        <a href="" onclick="window.print()" title="Imprimir - PDF">
             <i class="fas fa-print"></i>
         </a>
     </div>
@@ -83,7 +84,8 @@
         }
 
         .share div a{
-            font-size: 30px;
+            font-size: 20px;
+            margin: 0 ;
         }
     }
 

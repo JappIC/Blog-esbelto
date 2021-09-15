@@ -1,3 +1,8 @@
+<!--
+    Componente Figure:
+    Un componente para contenido multimedia
+-->
+
 <script>
     export let 
         src,

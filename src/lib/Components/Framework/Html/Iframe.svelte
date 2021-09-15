@@ -17,9 +17,9 @@
     <iframe
         title={title}
         src={src}
-        sandbox={sandbox}
         frameborder={frameborder}
         scrolling={scrolling}
+        sandbox={sandbox}
     >
     </iframe>
 </div>
@@ -27,12 +27,10 @@
 <style>
     div { overflow: hidden; }
     iframe {border: 0; }
-    
-    div.code{ }
 
     div.code iframe{
         width: 100%;
-        height: 300px;
+        max-height: 450px;
     }
     
     div.video{
@@ -48,4 +46,5 @@
         height: 100%;
         border: 0;
     }
+    
 </style>

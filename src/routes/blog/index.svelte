@@ -86,6 +86,7 @@
     @media (max-width: 767px) {
         .pg-blog .bucle-posts{
             grid-template-columns: 1fr;
+            padding: 0rem;
         }
     }
 </style>

@@ -19,7 +19,7 @@
         font-family: var(--font-1);
         font-size: var(--font-size);
         outline: 0;
-        padding: 5px 5px;
+        padding: 6px 6px;
         transition: var(--transition);
     }
 

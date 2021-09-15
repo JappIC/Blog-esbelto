@@ -18,10 +18,9 @@
     div{
         align-items: center;
         display: flex;
-        grid-gap: 5px;
+        grid-gap: 25px;
         font-weight: bold;
         padding: var(--padding);
-        word-break: break-all;
     }
 
     .default{
@@ -52,6 +51,6 @@
         border: var(--c-positive2);
         background-color: var(--c-positive);
         color: var(--c-positive2);
-    }
+    }   
 
 </style>

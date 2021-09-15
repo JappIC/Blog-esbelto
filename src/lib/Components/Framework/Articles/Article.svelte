@@ -166,11 +166,17 @@
 
     .ul3{
         display: flex;
+        flex-wrap: wrap;
         box-shadow: inset var(--shadow);
         border-radius: 10px;
+        border: var(--border);
         padding: 1rem;
         margin-top: 10px;
         transition: var(--transition);
+    }
+
+    ul a:hover{
+        color: var(--c-company);
     }
 
     .avatar-icon{
@@ -189,12 +195,16 @@
         box-shadow: var(--shadow-hover);
     }
 
+    .bucle:hover .ul3{
+        box-shadow: inset var(--shadow-hover);
+    }
+
     .bucle header figure{
         height: 350px;
     }
 
     .bucle header .title{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         color: var(--c-company);
     }
 

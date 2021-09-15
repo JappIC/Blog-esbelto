@@ -1,3 +1,7 @@
+<!--
+    Componente Btn:
+    Un componente para la etiqueta label
+-->
 <script>
     export let 
         forr="",

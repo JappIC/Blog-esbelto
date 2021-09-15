@@ -37,7 +37,7 @@
 		<a class:active={$page.path === '/'} sveltekit:prefetch href="/">Portada</a>
         <a class:active={$page.path === '/blog'} sveltekit:prefetch href="/blog">Blog</a>
         <a class:active={$page.path === '/profile'} sveltekit:prefetch href="/profile"> Perfil</a>
-        <a class:active={$page.path === '/about'} sveltekit:prefetch href="/about">About</a>
+        <a class:active={$page.path === '/static'} sveltekit:prefetch href="/static">Estática</a>
 	</nav>
 
     <!-- Opciones -->
@@ -149,7 +149,7 @@
         z-index: 99;
     }
 
-    /* Adaptación a movil */
+    /* Adaptación a tableta */
     @media (max-width: 768px) {
         
         header {
@@ -168,6 +168,21 @@
 
         .navActive{
             display: flex;
+        }
+    }
+
+    /* Adaptación a movil */
+    @media (max-width: 480px) {
+        .nav {
+            flex-direction: column;
+        }
+    }
+
+    /* Opciones de impresión */
+    @media print
+    {
+        header{
+            display: none !important;
         }
     }
 

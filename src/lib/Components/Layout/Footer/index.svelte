@@ -34,4 +34,11 @@
         font-weight: 400;
         margin: 0;
     }
+
+    @media print
+    {
+        footer{
+            display: none !important;
+        }
+    }
 </style>

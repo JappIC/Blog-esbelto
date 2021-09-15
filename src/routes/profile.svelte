@@ -36,9 +36,9 @@
     title={`${$user.name} ${$user.surname} ${$user.lastname}`}
 >
     {#if edit}
-        <Textarea bind:value={$user.description} class="text-justify"/>
+        <Textarea bind:value={$user.description} class="text-justify m-top"/>
     {:else}
-        <p class="text-justify">{$user.description}</p>
+        <p class="text-justify m-top">{$user.description}</p>
     {/if}
     
     <SocialMedia github={$user.github} web={$user.web} linkedin={$user.linkedin}/>

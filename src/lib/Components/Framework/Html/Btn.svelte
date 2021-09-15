@@ -1,3 +1,8 @@
+<!--
+    Componente Btn:
+    Un componente para generar botones
+-->
+
 <script>
     export let href;
 </script>
@@ -26,6 +31,7 @@
         font-weight: bold;
         padding: 10px 20px;
         text-decoration: none;
+        text-align: center;
         transition: var(--transition);
     }
 

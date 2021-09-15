@@ -90,6 +90,7 @@
     @media (max-width: 767px) {
         .pg-categories .bucle-posts{
             grid-template-columns: 1fr;
+            padding: 0rem;
         }
     }
 </style>

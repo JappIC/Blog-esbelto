@@ -5,7 +5,6 @@
 -->
 
 <script>
-    
     export let 
         src         ="",
         figcaption  ="",

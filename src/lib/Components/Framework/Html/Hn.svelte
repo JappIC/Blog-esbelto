@@ -29,10 +29,6 @@
 {/if}
 
 <style>
-    h1,h2,h3,h4,h5,h6{
-        margin: var(--margin);
-        padding: 0;
-    }
     h1 {
         font-size: 3rem;
         font-weight: 200; 
@@ -48,6 +44,7 @@
 
     .title{
         border-bottom: 1px solid var(--c-company);
+        padding-left: var(--padding);
         text-align: left;
     }
 </style>

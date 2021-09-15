@@ -9,17 +9,6 @@
 }*/
 
 :root {
-	--font-mono: 'Fira Mono', monospace;
-	--c-blanco:         #ffffff;
-    --c-negro:          #000000;
-    --sombra:           #b3b3b3;
-	--primary-color:    #b9c6d2;
-	--secondary-color:  #d0dde9;
-	--tertiary-color:   #edf0f8;
-	--c-red:            #ff3e00;
-	--column-width:         42rem;
-	--column-margin-top:     4rem;
-
     /* Genéricos */
     --c-body:       var(--c-tertiary);
     --c-text:       rgba( 68, 68, 68,1);
@@ -35,6 +24,8 @@
     --shadow-hover: 0 0 1px 0px var(--c-shadow);
     --margin:       25px;
     --padding:      25px;
+    --margin-2:     75px;
+    --padding-2:    75px;
     --transition:   0.3s;
     --c-warning:    rgba(243,173, 69,1);
     --c-warning2:   rgba(255,255, 255,1);
@@ -46,7 +37,7 @@
     /*Font*/
     --font-1:       'Quicksand', sans-serif;
     --font-2:       'Raleway', sans-serif;
-    --font-size:    1rem;
+    --font-size:    1.1rem;
 
     /* Botón */
     --c-btn:        var(--c-company);
@@ -116,36 +107,50 @@ a:hover {
 }
 
 /* Nueva especificación de persolalizacion de la barra de desplazamiento */
-body {
+html {
     scrollbar-width: thin;
     scrollbar-color: var(--c-company) var(--c-company2);
 }
 /* Personalizacion de la barra de desplazamiento para navegadores basados en webkit */
-body::-webkit-scrollbar {
-    width: 4px;
+::-webkit-scrollbar {
+    width: 5px;
 }
 
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: var(--c-company2);
 }
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: var(--c-company) ;
     border-radius: 6px;
     border: 1px solid var(--c-company2);
 }
 
 /* FRAMEWORK CSS */
-.bold{ font-weight: bold; }
-.text-justify { text-align: justify; }
-.text-center { text-align: center; }
-.word-break{word-break: break-all;}
-.margin{ margin: var(--margin);}
-.padding{ padding: var(--padding); }
-.m-top{ margin-top: var(--margin);}
-.m-bottom{ margin-bottom: var(--margin);}
-.p-top{ padding-top: var(--margin);}
-.p-bottom{ padding-bottom: var(--margin);}
-.bold{font-weight: bold;}
+.bold           { font-weight: bold; }
+.text-justify   { text-align: justify; }
+.text-center    { text-align: center; }
+.word-break     {word-break: break-all;}
+
+.margin         { margin: var(--margin);}
+.margin-2       { margin: var(--margin-2);}
+.m-top          { margin-top: var(--margin);}
+.m-top-2        { margin-top: var(--margin-2);}
+.m-bottom       { margin-bottom: var(--margin);}
+.m-bottom-2     { margin-bottom: var(--margin-2);}
+
+.padding        { padding: var(--padding); }
+.padding-2      { padding: var(--padding-2); }
+
+.p-top          { padding-top: var(--margin);}
+.p-top-2        { padding-top: var(--margin-2);}
+.p-bottom       { padding-bottom: var(--margin);}
+.p-bottom-2     { padding-bottom: var(--margin-2);}
+
+.overflow-h     { overflow: hidden; }
+.d-i-block      {display: inline-block;}
+.d-block        {display: block;}
+.d-grid         {display: grid;}
+.d-flex         {display: flex;}
 
 /* Adaptación a movil */
 @media (min-width: 0px) and (max-width: 767px) {}
