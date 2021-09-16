@@ -32,6 +32,8 @@
     import SocialMedia from '$lib/Components/Framework/SocialMedia.svelte';
     import Loading from '$lib/Components/Framework/Loading.svelte';
     import Btn from '$lib/Components/Framework/Html/Btn.svelte';
+import Figure from '$lib/Components/Framework/Html/Figure.svelte';
+import Signage from '$lib/Components/Framework/Signage.svelte';
 
     let componentes= [
         'Accordion', 'Articles', 'Comments', 'Headers', 'Accordion', 
@@ -70,6 +72,17 @@
             Este proyecto se hace para afianzar conocimientos de Html, Css, JS y aprender el desarrollo de 
             aplicaciones usando un FW de JS como compilador.
         </p>
+    </Container>
+
+    <Container class="large" transition=true>
+        <Column class="col-3">
+            <Figure src="/static/img/esbelto-azul.png"/>
+            <Figure src="/static/img/esbelto-defecto.png"/>
+            <Figure src="/static/img/esbelto-oscuro.png"/>
+        </Column>
+    </Container>
+
+    <Container class="medium padding" transition=true>
         <p>
             Esbelto está pensado para tener una base muy simple para comenzar a desarrollar una web.
             La misma web funciona como documentación. En el enlace "blog" del menú principal podrás ver que los 
@@ -191,6 +204,8 @@
         <p>
             Esbelto usa <a class="bold" href="https://fonts.google.com/">Google Fonts</a>. Una librería de fuentes tipográficas.
         </p>
+
+        <Signage text="SvelteKit está en versión beta. No se recomienda el uso de Esbelto en producción" icon="fas fa-exclamation" class="warning"/>
     </Container>
 
 </section>

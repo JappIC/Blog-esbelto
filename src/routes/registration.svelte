@@ -27,6 +27,10 @@ import Hn from '$lib/Components/Framework/Html/Hn.svelte';
     </Headers>
 
     <Container class="medium padding" transition=true>
+        <Hn type="h2" class="title">v0.0.7</Hn>
+        <p>Se añadió y actualizo los archivos readme y license.</p>
+        <Hn type="h2" class="title">v0.0.6</Hn>
+        <p>Se añadió una nueva página para mostrar un registro de versiones de Esbelto </p>
         <Hn type="h2" class="title">v0.0.5</Hn>
         <p>Se añadieron 2 nuevos temas para cambiar el formato de colores de la web y se optimizó el que está por defecto.</p>
         <Hn type="h2" class="title">v0.0.4</Hn>
