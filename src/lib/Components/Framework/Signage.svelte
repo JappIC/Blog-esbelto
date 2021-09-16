@@ -25,7 +25,7 @@
 
     .default{
         border: var(--border);
-        background-color: var(--c-tertiary);
+        background-color: var(--c-secondary);
         color: var(--c-text);
     }
 

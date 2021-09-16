@@ -14,6 +14,7 @@
         border: var(--border);
         border-radius: 5px;
         background-color: var(--c-secondary);
+        color: var(--c-text);
         font-family: var(--font-1);
         font-size: var(--font-size);
         outline: 0;
