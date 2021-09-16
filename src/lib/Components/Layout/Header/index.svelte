@@ -12,7 +12,7 @@
     let navActive = false;
     let navOptionActive = false;
     
-    // Funcion para ocultar o mostrar el navegador de la app en fortato movil usando clases.
+    // Funcion para ocultar o mostrar el navegador de la app en formato movil usando clases.
     const btnNavOption = ()=>{
         navOptionActive = !navOptionActive;
     }
@@ -38,6 +38,7 @@
         <a class:active={$page.path === '/blog'} sveltekit:prefetch href="/blog">Blog</a>
         <a class:active={$page.path === '/profile'} sveltekit:prefetch href="/profile"> Perfil</a>
         <a class:active={$page.path === '/static'} sveltekit:prefetch href="/static">Estática</a>
+        <a class:active={$page.path === '/registration'} sveltekit:prefetch href="/registration">Registro</a>
 	</nav>
 
     <!-- Opciones -->

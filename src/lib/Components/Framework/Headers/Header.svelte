@@ -39,10 +39,14 @@
         padding: 0;
     }
 
-    /* Adaptación a movil */
+    /* Adaptación tableta */
     @media (min-width: 0px) and (max-width: 767px) {
         header{
             padding: 50px 5vw;
+        }
+
+        header h1{
+            font-size: 8vw;
         }
     }
 </style>

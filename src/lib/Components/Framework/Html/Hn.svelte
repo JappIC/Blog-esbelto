@@ -30,15 +30,15 @@
 
 <style>
     h1 {
-        font-size: 3rem;
+        font-size: 1.8rem;
         font-weight: 200; 
     }
     h2 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 400; 
     }
     h3,h4,h5,h6 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: 600; 
     }
 
@@ -46,5 +46,9 @@
         border-bottom: 1px solid var(--c-company);
         padding-left: var(--padding);
         text-align: left;
+    }
+
+    @media (min-width: 0px) and (max-width: 767px) {
+        
     }
 </style>

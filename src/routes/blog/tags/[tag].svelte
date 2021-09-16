@@ -56,7 +56,7 @@
         {#each filteredPosts as { path, metadata:{  id, title, description, userName, tags, img, date, category}} }
             <Article 
                 id={id}
-                title={title.substring(0, 30)+`...`}
+                title={title.substring(0, 30)}
                 description={description.substring(0, 130)+`...`}
                 userName={userName}
                 link={`/blog/${path.replace("./", "").replace(".md", "").replace(".svx", "")}`}
