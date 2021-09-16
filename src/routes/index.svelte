@@ -18,6 +18,7 @@
 </script>
 
 <script>
+    import { appData } from '$lib/stores/appData.js';
     import { user } from '$lib/stores/user.js';
     /* Componentes */
     import { Tabs, TabList, TabPanel, Tab } from '$lib/Components/Framework/Tabs/tabs.js';
@@ -32,8 +33,8 @@
     import SocialMedia from '$lib/Components/Framework/SocialMedia.svelte';
     import Loading from '$lib/Components/Framework/Loading.svelte';
     import Btn from '$lib/Components/Framework/Html/Btn.svelte';
-import Figure from '$lib/Components/Framework/Html/Figure.svelte';
-import Signage from '$lib/Components/Framework/Signage.svelte';
+    import Figure from '$lib/Components/Framework/Html/Figure.svelte';
+    import Signage from '$lib/Components/Framework/Signage.svelte';
 
     let componentes= [
         'Accordion', 'Articles', 'Comments', 'Headers', 'Accordion', 
@@ -55,14 +56,14 @@ import Signage from '$lib/Components/Framework/Signage.svelte';
 </script>
 
 <Seo 
-    title="Esbelto"
+    title={$appData.name}
     description="Una web desarrollada con el FW Svelte Kit"
     type="website"
     img="/static/img/svelte-logo.svg"
 />
 
 <section class="page pg-home">
-    <Header title="ESBELTO">
+    <Header title={$appData.name}>
         <p>Una web desarrollada con el FW Svelte Kit</p>
     </Header>
 

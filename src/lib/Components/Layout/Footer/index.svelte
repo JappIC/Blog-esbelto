@@ -4,11 +4,13 @@
 -->
 
 <script>
+    import { appData } from '$lib/stores/appData.js';
+
     let year = new Date().getFullYear();
 </script>
 
 <footer>
-	<h4>Esbelto &copy;{year}</h4>
+	<h4>{$appData.name} &copy;{year}</h4>
 </footer>
 
 <style>

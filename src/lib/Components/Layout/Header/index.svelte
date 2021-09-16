@@ -4,6 +4,7 @@
 -->
 
 <script>
+    import { appData } from '$lib/stores/appData.js';
     import { theme, selectedTheme } from '$lib/stores/theme.js'
     import Select from "$lib/Components/Framework/Html/Select.svelte";
 	import { page } from '$app/stores';
@@ -22,14 +23,13 @@
         navActive = !navActive;
     }
 
-    import imgLogo from '/static/img/svelte-logo.svg';
 </script>
 
 <header>
     <!-- Marca de la web -->
 	<a class="firma" class:active={$page.path === '/'} sveltekit:prefetch href="/" >
-        <img src="{imgLogo}" alt="Blog" />
-        <h1>Esbelto</h1>
+        <img src="{$appData.logo}" alt="Blog" />
+        <h1>{$appData.name}</h1>
     </a>
 
     <!-- Navegador principal -->

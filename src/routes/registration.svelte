@@ -27,6 +27,8 @@ import Hn from '$lib/Components/Framework/Html/Hn.svelte';
     </Headers>
 
     <Container class="medium padding" transition=true>
+        <Hn type="h2" class="title">v0.0.8</Hn>
+        <p>Se añadió una store para almacenar los datos globales de la app.</p>
         <Hn type="h2" class="title">v0.0.7</Hn>
         <p>Se añadió y actualizo los archivos readme y license.</p>
         <Hn type="h2" class="title">v0.0.6</Hn>
