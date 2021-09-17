@@ -1,6 +1,7 @@
 <!--
-    Componente Textarea:
-    Un componente para los textareas.
+@component
+Componente Textarea:
+Un componente para los textareas.
 -->
 
 <script>

@@ -1,6 +1,7 @@
 <!--
-    Componente List:
-    Un componente para mostrar listas con clases para formatear el diseño.
+@component
+Componente List:
+Un componente para mostrar listas con clases para formatear el diseño.
 -->
 
 <script>

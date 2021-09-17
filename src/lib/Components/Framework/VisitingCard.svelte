@@ -1,7 +1,8 @@
 <!--
-    Componente VisitingCard:
-    Un componente para mostrar una targeta de visita.
-    También contiene un botón imprimir que permite guardar en pdf.
+@component
+Componente VisitingCard:
+Un componente para mostrar una targeta de visita.
+También contiene un botón imprimir que permite guardar en pdf.
 -->
 
 <script>

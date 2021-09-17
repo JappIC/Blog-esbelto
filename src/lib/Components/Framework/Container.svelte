@@ -1,6 +1,7 @@
 <!--
-    Componente Container:
-    Un componente contenedor fortateable por clases.
+@component
+Componente Container:
+Un componente contenedor fortateable por clases.
 -->
 
 <script>

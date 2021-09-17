@@ -1,6 +1,7 @@
 <!--
-    Componente Comentario:
-    Un diseño general para mostrar los comentarios y el formulario .
+@component
+Componente Comentario:
+Un diseño general para mostrar los comentarios y el formulario .
 -->
 
 <script>

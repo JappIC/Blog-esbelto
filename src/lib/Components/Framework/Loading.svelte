@@ -1,11 +1,12 @@
 <!--
-    Componente Loading:
-    Un simple componente para usar una animación de espera
-    Recurso: https://animista.net/
+@component
+Componente Loading:
+Un simple componente para usar una animación de espera
+Recurso: https://animista.net/
 -->
 
 <script>
-    // No contiene JS por el momento
+    /** No contiene JS por el momento */
 </script>
 
 <div class="loading">

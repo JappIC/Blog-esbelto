@@ -1,6 +1,7 @@
 <!--
-    Componente Footer:
-    Componente principal de pie de página.
+@component
+Componente Footer:
+Componente principal de pie de página.
 -->
 
 <script>

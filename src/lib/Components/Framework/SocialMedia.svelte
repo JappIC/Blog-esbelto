@@ -1,6 +1,7 @@
 <!--
-    Componente SocialMedia:
-    Un componente que permite añadir url de las redes sociales.
+@component
+Componente SocialMedia:
+Un componente que permite añadir url de las redes sociales.
 -->
 
 <script>

@@ -1,6 +1,7 @@
 <!--
-    Página error:
-    Una página para mostrar los errores.
+@component
+Página error:
+Una página para mostrar los errores.
 -->
 
 <script context='module'>

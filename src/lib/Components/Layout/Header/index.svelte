@@ -1,6 +1,7 @@
 <!--
-    Componente Header:
-    Componente principal de la cabecera de página.
+@component
+Componente Header:
+Componente principal de la cabecera de página.
 -->
 
 <script>

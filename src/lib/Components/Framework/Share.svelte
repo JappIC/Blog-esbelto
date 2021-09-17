@@ -1,16 +1,17 @@
 <!--
-    Componente Share:
-    Un componente que permite añadir botones para compartir la página en las redes sociales.
-    También contiene un botón imprimir que permite guardar en pdf.
+@component
+Componente Share:
+Un componente que permite añadir botones para compartir la página en las redes sociales.
+También contiene un botón imprimir que permite guardar en pdf.
 -->
 
 <script>
     import { page } from '$app/stores';
 
     /**
-     * Guardamos la url del host en una constante.
-     * Creamos una variable reactiva con $: para que actualice el path dependiendo de la página donde se encuentra el componente.
-     **/ 
+    Guardamos la url del host en una constante.
+    Creamos una variable reactiva con $: para que actualice el path dependiendo de la página donde se encuentra el componente.
+    */ 
     const host = $page.host
     $:url = $page.path;
 </script>

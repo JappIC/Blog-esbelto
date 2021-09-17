@@ -1,6 +1,7 @@
 <!--
-    Componente Btn:
-    Un componente para generar botones
+@component
+Componente Btn:
+Un componente para generar botones
 -->
 
 <script>

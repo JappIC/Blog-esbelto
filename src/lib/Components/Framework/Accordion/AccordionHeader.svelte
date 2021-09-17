@@ -1,3 +1,7 @@
+<!--
+@component
+Componente AccordionHeader:
+-->
 <script>
     export let 
         title = undefined,

@@ -1,6 +1,7 @@
 <!--
-    Componente Btn:
-    Un componente para la etiqueta label
+@component
+Componente Btn:
+Un componente para la etiqueta label
 -->
 <script>
     export let 

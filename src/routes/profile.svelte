@@ -1,6 +1,7 @@
 <!--
-    Página profile:
-    Una página para mostrar el perfil de usuario.
+@component
+Página profile:
+Una página para mostrar el perfil de usuario.
 -->
 
 <script context="module">

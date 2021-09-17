@@ -1,6 +1,7 @@
 <!--
-    Componente Figure:
-    Un componente para contenido multimedia
+@component
+Componente Figure:
+Un componente para contenido multimedia
 -->
 
 <script>

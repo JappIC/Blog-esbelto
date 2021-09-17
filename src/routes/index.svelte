@@ -1,6 +1,7 @@
 <!--
-    Página principal:
-    La página principal de la aplicación
+@component
+Página principal:
+La página principal de la aplicación
 -->
 
 <script context="module">

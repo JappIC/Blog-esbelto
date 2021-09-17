@@ -1,13 +1,14 @@
 <!--
-    Componente Header genérico:
-    Un componente para cabeceras
+@component
+Componente Header genérico:
+Un componente para cabeceras
 
-    Existes dos hilos habiertos para poder cambiar el tipo de etiqueta html, ideal para seleccionar el tipo de etiqueta de título.
-    https://github.com/sveltejs/svelte/issues/2324
-    https://github.com/sveltejs/svelte/pull/5481
-    
-    Por ahora se podría hacer ese comportamiento con if.
-    https://svelte.dev/repl/42290cfe8bae4dee4df232669d12dc29?version=3.0.0-beta.21
+Existes dos hilos habiertos para poder cambiar el tipo de etiqueta html, ideal para seleccionar el tipo de etiqueta de título.
+- https://github.com/sveltejs/svelte/issues/2324
+- https://github.com/sveltejs/svelte/pull/5481
+
+Por ahora se podría hacer ese comportamiento con if.
+- https://svelte.dev/repl/42290cfe8bae4dee4df232669d12dc29?version=3.0.0-beta.21
 -->
 
 <script>

@@ -1,6 +1,7 @@
-<!-- 
-    Layout app:
-    Layout principal de la app 
+<!--
+@component
+Layout app:
+Layout principal de la app 
 -->
 
 <script>

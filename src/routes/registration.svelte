@@ -1,6 +1,7 @@
 <!--
-    Página Registration:
-    Una página estática para tener un registro de la versiones de Esbelto.
+@component
+Página Registration:
+Una página estática para tener un registro de la versiones de Esbelto.
 -->
 
 <script context="module">
@@ -27,6 +28,8 @@ import Hn from '$lib/Components/Framework/Html/Hn.svelte';
     </Headers>
 
     <Container class="medium padding" transition=true>
+        <Hn type="h2" class="title">v0.0.9</Hn>
+        <p>Se añadió la @component etiqueta de comentarios de código en la descripción del componente</p>
         <Hn type="h2" class="title">v0.0.8</Hn>
         <p>Se añadió una store para almacenar los datos globales de la app.</p>
         <Hn type="h2" class="title">v0.0.7</Hn>

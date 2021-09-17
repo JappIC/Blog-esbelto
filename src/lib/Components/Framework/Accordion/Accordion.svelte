@@ -1,3 +1,8 @@
+<!--
+@component
+Componente Accordion:
+-->
+
 <script>
     import { createEventDispatcher, setContext } from "svelte";
     import { writable } from "svelte/store";

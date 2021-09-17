@@ -1,6 +1,7 @@
 <!--
-    Formulario del componente comentario:
-    Un simple formulario para añadir comentarios.
+@component
+Componente Form:
+Un formulario para el componente Comments
 -->
 
 <script>

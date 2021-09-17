@@ -1,9 +1,6 @@
 <!--
-    Componente Article:
-    Un diseño general para mostrar artículos en bucle o individualmente.
-
-    Recursos:
-    https://lenguajejs.com/javascript/fechas/date-fechas-nativas/
+@component
+Componente Article:
 -->
 
 <script>

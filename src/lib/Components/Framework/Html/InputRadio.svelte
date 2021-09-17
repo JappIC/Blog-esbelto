@@ -1,6 +1,7 @@
 <!--
-    Componente Input:
-    Un componente para usar cualquier tipo de input.
+@component
+Componente Input:
+Un componente para usar cualquier tipo de input.
 -->
 
 <script>

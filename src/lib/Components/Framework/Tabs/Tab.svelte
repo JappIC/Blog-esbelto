@@ -1,3 +1,8 @@
+<!--
+@component
+Componente Tab:
+-->
+
 <script>
 	import { getContext } from 'svelte';
 	import { TABS } from './Tabs.svelte';

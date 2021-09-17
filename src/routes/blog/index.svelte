@@ -1,3 +1,9 @@
+<!--
+@component
+Página Blog:
+Una página para mostrar todos los artículos.
+-->
+
 <script context='module'>
     
     //export const prerender = true;

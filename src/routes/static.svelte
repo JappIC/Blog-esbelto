@@ -1,6 +1,7 @@
 <!--
-    Página estática:
-    Un ejemplo de como hacer una página estática en svelte.
+@component
+Página estática:
+Un ejemplo de como hacer una página estática en svelte.
 -->
 
 <script context="module">

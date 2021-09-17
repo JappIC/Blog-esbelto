@@ -1,6 +1,7 @@
 <!--
-    Componente Iframe:
-    Un componente para los iframes que soporta video o código usando una clase (video o code).
+@component
+Componente Iframe:
+Un componente para los iframes que soporta video o código usando una clase (video o code).
 -->
 
 <script>

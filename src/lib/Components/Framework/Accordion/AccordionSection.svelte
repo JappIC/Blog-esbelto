@@ -1,3 +1,8 @@
+<!--
+@component
+Componente AccordionSection:
+-->
+
 <script context="module">
     export const ACCORDION = {};
 </script>

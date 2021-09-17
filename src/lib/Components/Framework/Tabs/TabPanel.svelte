@@ -1,3 +1,8 @@
+<!--
+@component
+Componente TabPanel:
+-->
+
 <script>
 	import { getContext } from 'svelte';
 

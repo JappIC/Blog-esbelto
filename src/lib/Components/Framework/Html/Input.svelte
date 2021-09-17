@@ -1,8 +1,9 @@
 <!--
-    Componente Input:
-    Un componente para usar casi cualquier tipo de input.
-    Los input de tipo "Checkbox" y "Radiobutton" tienen sus propios componentes.
-    Esto se debe porque svelte maneja el "value" de estos input de manera diferente al "bind:value" general de casi todos los input.
+@component
+Componente Input:
+Un componente para usar casi cualquier tipo de input.
+Los input de tipo "Checkbox" y "Radiobutton" tienen sus propios componentes.
+Esto se debe porque svelte maneja el "value" de estos input de manera diferente al "bind:value" general de casi todos los input.
 -->
 
 <script>

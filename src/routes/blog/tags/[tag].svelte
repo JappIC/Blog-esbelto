@@ -1,3 +1,9 @@
+<!--
+@component
+Página Blog tags:
+Una página para mostrar todos los artículos por etiquetas.
+-->
+
 <script context='module'>
     
     //export const prerender = true;

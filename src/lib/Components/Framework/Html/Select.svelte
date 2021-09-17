@@ -1,6 +1,7 @@
 <!--
-    Componente Select:
-    Un componente para mostrar una lista seleccionable.
+@component
+Componente Select:
+Un componente para mostrar una lista seleccionable.
 -->
 
 <script>

@@ -1,3 +1,9 @@
+<!--
+@component
+Página Blog category:
+Una página para mostrar todos los artículos por categorías.
+-->
+
 <script context='module'>
     
     //export const prerender = true;

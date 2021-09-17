@@ -1,7 +1,13 @@
+<!--
+@component
+Contenedor de un artículo:
+Un contenedor global para los articulos individuales.
+-->
+
 <script>
     import { user } from '$lib/stores/user.js';
     import VisitingCard from '$lib/Components/Framework/VisitingCard.svelte';
-import Container from '$lib/Components/Framework/Container.svelte';
+    import Container from '$lib/Components/Framework/Container.svelte';
 </script>
 
 <slot />

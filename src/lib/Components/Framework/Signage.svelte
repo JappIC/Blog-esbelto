@@ -1,6 +1,7 @@
 <!--
-    Componente Signage:
-    Un componente para fortrar información, avisos...
+@component
+Componente Signage:
+Un componente para fortrar información, avisos...
 -->
 
 <script>

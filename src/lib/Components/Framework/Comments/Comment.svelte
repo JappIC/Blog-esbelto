@@ -1,6 +1,8 @@
 <!--
-    Diseño de los comentarios:
-    Diseño para mostrar los comentarios ya publicados.
+@component
+Componente Comentgario:
+Diseño de los comentarios:
+Diseño para mostrar los comentarios ya publicados.
 -->
 
 <script>

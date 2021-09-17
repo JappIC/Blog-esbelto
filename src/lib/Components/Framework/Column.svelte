@@ -1,6 +1,7 @@
 <!--
-    Componente Column:
-    Un componente que permite formatear contanido en columnas usando clases.
+@component
+Componente Column:
+Un componente que permite formatear contanido en columnas usando clases.
 -->
 
 <script>

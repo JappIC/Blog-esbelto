@@ -1,3 +1,8 @@
+<!--
+@component
+Componente Tabs:
+-->
+
 <script context="module">
 	export const TABS = {};
 </script>

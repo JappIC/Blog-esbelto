@@ -1,8 +1,9 @@
 <!--
-    Componente SEO:
-    Un componente para formatear el head por página.
-    Recursos:
-    https://ogp.me/
+@component
+Componente SEO:
+Un componente para formatear el head por página.
+Recursos:
+https://ogp.me/
 -->
 
 <script>
@@ -16,9 +17,9 @@
     ;
     
     /**
-     * Guardamos la url del host en una constante.
-     * Creamos una variable reactiva con $: para que actualice el path dependiendo de la página donde se encuentra el componente.
-     **/ 
+    Guardamos la url del host en una constante.
+    Creamos una variable reactiva con $: para que actualice el path dependiendo de la página donde se encuentra el componente.
+    */ 
     const host = $page.host
     $:url = $page.path;
 </script>
