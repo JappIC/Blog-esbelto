@@ -33,6 +33,8 @@ import Seo from '$lib/Components/Framework/Seo.svelte';
 <section class="page pg-static">
 
     <Container class="medium padding" transition=true>
+        <Hn type="h2" class="title">v0.0.10</Hn>
+        <p>Se optimizó el SEO de las páginas con el componente Seo de Esbelto</p>
         <Hn type="h2" class="title">v0.0.9</Hn>
         <p>Se añadió la @component etiqueta de comentarios de código en la descripción del componente</p>
         <Hn type="h2" class="title">v0.0.8</Hn>
