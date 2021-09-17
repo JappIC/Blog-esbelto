@@ -24,14 +24,17 @@ Un ejemplo de como hacer una página estática en svelte.
     import Headers from '$lib/Components/Framework/Headers/Header.svelte';
     import Container from "$lib/Components/Framework/Container.svelte";
     import Signage from "$lib/Components/Framework/Signage.svelte";
+    import Seo from '$lib/Components/Framework/Seo.svelte';
 </script>
 
-<svelte:head>
-	<title>Estática</title>
-</svelte:head>
+<Seo 
+    title="Estática"
+    description="Ejemplo de una página estática en SvelteKit"
+    type="website"
+    img="/static/img/svelte-logo.svg"
+/>
 
 <section class="page pg-static">
-    
     <Headers title="Estática">
         <p>Ejemplo de una página estática en SvelteKit</p>
     </Headers>

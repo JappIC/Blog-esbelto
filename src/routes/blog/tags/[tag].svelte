@@ -41,14 +41,18 @@ Una página para mostrar todos los artículos por etiquetas.
     import Header from '$lib/Components/Framework/Headers/Header.svelte';
     import Article from '$lib/Components/Framework/Articles/Article.svelte';
     import Loading from '$lib/Components/Framework/Loading.svelte';
+    import Seo from '$lib/Components/Framework/Seo.svelte';
 
     export let filteredPosts;
     export let tag;
 </script>
 
-<svelte:head>
-	<title>Blog</title>
-</svelte:head>
+<Seo 
+    title={`Resultado de ${tag}`}
+    description={`Muestra los resultado de ${tag}`}
+    type="website"
+    img="/static/img/svelte-logo.svg"
+/>
 
 <section class="page pg-tags">
     

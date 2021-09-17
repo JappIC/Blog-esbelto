@@ -16,16 +16,21 @@ Una página estática para tener un registro de la versiones de Esbelto.
     import Headers from '$lib/Components/Framework/Headers/Header.svelte';
     import Container from "$lib/Components/Framework/Container.svelte";
 import Hn from '$lib/Components/Framework/Html/Hn.svelte';
+import Seo from '$lib/Components/Framework/Seo.svelte';
 </script>
 
 <svelte:head>
 	<title>Estática</title>
 </svelte:head>
 
+<Seo 
+    title="Registro"
+    description="Registro de los cambios en Esbelto"
+    type="website"
+    img="/static/img/svelte-logo.svg"
+/>
+
 <section class="page pg-static">
-    <Headers title="Registro">
-        <p>Registro de versiones de Esbelto</p>
-    </Headers>
 
     <Container class="medium padding" transition=true>
         <Hn type="h2" class="title">v0.0.9</Hn>

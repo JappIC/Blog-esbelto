@@ -60,7 +60,7 @@ La página principal de la aplicación
     title={$appData.name}
     description="Una web desarrollada con el FW Svelte Kit"
     type="website"
-    img="/static/img/svelte-logo.svg"
+    img={$appData.logo}
 />
 
 <section class="page pg-home">

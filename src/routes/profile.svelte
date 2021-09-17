@@ -26,12 +26,20 @@ Una página para mostrar el perfil de usuario.
     import Column from '$lib/Components/Framework/Column.svelte';
     import SocialMedia from '$lib/Components/Framework/SocialMedia.svelte';
     import Signage from '$lib/Components/Framework/Signage.svelte';
+import Seo from '$lib/Components/Framework/Seo.svelte';
 
     let edit = false;
 
     // Formatemos la fecha de nacimiento
     let date = new Date($user.birthday).toLocaleDateString("es-ES");
 </script>
+
+<Seo 
+    title={$user.name}
+    description={$user.description}
+    type="website"
+    img={$user.avatar}
+/>
 
 <Headers
     title={`${$user.name} ${$user.surname} ${$user.lastname}`}
