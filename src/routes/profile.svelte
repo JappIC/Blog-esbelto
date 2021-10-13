@@ -26,7 +26,7 @@ Una página para mostrar el perfil de usuario.
     import Column from '$lib/Components/Framework/Column.svelte';
     import SocialMedia from '$lib/Components/Framework/SocialMedia.svelte';
     import Signage from '$lib/Components/Framework/Signage.svelte';
-import Seo from '$lib/Components/Framework/Seo.svelte';
+    import Seo from '$lib/Components/Framework/Seo.svelte';
 
     let edit = false;
 
