@@ -1,18 +1,18 @@
 {
 	"name": "esbelto",
-	"version": "0.0.9",
+	"version": "0.1.11",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
 		"preview": "svelte-kit preview"
 	},
 	"devDependencies": {
-		"@sveltejs/kit": "next",
-		"svelte": "^3.34.0",
-		"mdsvex": "^0.9.7"
+		"@sveltejs/kit": "^1.0.0-next.183",
+		"mdsvex": "^0.9.7",
+		"svelte": "^3.43.2"
 	},
 	"type": "module",
 	"dependencies": {
-		"lit-element": "^2.5.1"
+		"lit-element": "^3.0.1"
 	}
 }

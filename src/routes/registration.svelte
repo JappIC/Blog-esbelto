@@ -32,6 +32,8 @@ Una página estática para tener un registro de la versiones de Esbelto.
     </Headers>
 
     <Container class="medium padding" transition=true>
+        <Hn type="h2" class="title">v0.1.11</Hn>
+        <p>Se actualizaron las dependencias de Sveltekit</p>
         <Hn type="h2" class="title">v0.0.10</Hn>
         <p>Se optimizó el SEO de las páginas con el componente Seo de Esbelto</p>
         <Hn type="h2" class="title">v0.0.9</Hn>
