@@ -78,9 +78,9 @@ La página principal de la aplicación
 
     <Container class="large" transition=true>
         <Column class="col-3">
-            <Figure src="/img/esbelto-azul.png"/>
-            <Figure src="/img/esbelto-defecto.png"/>
-            <Figure src="/img/esbelto-oscuro.png"/>
+            <Figure src="/img/esbelto-azul.png" alt="Azul"/>
+            <Figure src="/img/esbelto-defecto.png" alt="defecto"/>
+            <Figure src="/img/esbelto-oscuro.png" alt="oscuro"/>
         </Column>
     </Container>
 

@@ -6,15 +6,15 @@ Un componente que permite añadir url de las redes sociales.
 
 <script>
     export let 
-        facebook,
-        linkedin,
-        twitch,
-        twitter,
-        whatsapp,
-        discord,
-        telegram,
-        github,
-        web
+        facebook    =undefined,
+        linkedin    =undefined,
+        twitch      =undefined,
+        twitter     =undefined,
+        whatsapp    =undefined,
+        discord     =undefined,
+        telegram    =undefined,
+        github      =undefined,
+        web         =undefined
     ;
 </script>
 
@@ -68,25 +68,25 @@ Un componente que permite añadir url de las redes sociales.
 
 </div>
 
-<style>
+<style lang="postcss">
     .social-media{
         display: grid;
         padding: 20px 10px;
         grid-auto-flow: column;
         text-align: center;
         justify-content: center;
-    }
 
-    .social-media a{
-        font-size: 20px;
-        margin: 5px;
-        padding: 5px;
-        transition: 0.3s;
-        color: var(--c-link);
-    }
+        & a{
+            font-size: 20px;
+            margin: 5px;
+            padding: 5px;
+            transition: 0.3s;
+            color: var(--c-link);
+        }
 
-    .social-media a:hover{
-        color: var(--c-link-hover);
+        & a:hover{
+            color: var(--c-link-hover);
+        }
     }
 
     /* Adaptación a tabletas */
@@ -96,13 +96,13 @@ Un componente que permite añadir url de las redes sociales.
 
     /* Adaptación a movil */
     @media (max-width: 767px) {
-        .social-media{
+        .social-media {
             grid-template-columns: repeat(3, 1fr);
             grid-auto-flow: row;
-        }
 
-        .social-media a{
-            font-size: 30px;
+            & a{
+                font-size: 30px;
+            }
         }
     }
 

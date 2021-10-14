@@ -60,7 +60,7 @@ Componente principal de la cabecera de página.
 </nav>
 {/if}
 
-<style>
+<style lang="postcss">
     /* General */
 	header {
         background: var(--c-primary);
@@ -77,65 +77,66 @@ Componente principal de la cabecera de página.
         right: 0;
         left: 0;
         z-index: 100;
-    }
 
-    a.active {
-        color: var(--c-link-active);
-    }
+        & a.active {
+            color: var(--c-link-active);
+        }
 
-    a:hover {
-        color: var(--c-link-hover);
-    }
+        & a:hover {
+            color: var(--c-link-hover);
+        }
 
-    /* Firma */
-    header .firma{
-        display: grid;
-        grid-area: firma;
-        grid-template-columns: auto 1fr;
-        align-items: center;
-    }
+        /* Firma */
+        & .firma{
+            display: grid;
+            grid-area: firma;
+            grid-template-columns: auto 1fr;
+            align-items: center;
 
-    header .firma img{
-        max-width: 25px;
-        margin: 0 5px;
-        border-radius: 50%;
-    }
+            & img{
+                max-width: 25px;
+                margin: 0 5px;
+                border-radius: 50%;
+            }
 
-    header .firma h1{
-        margin: 0;
-        font-size: var(--font-size);
-        padding: 10px 0px
-    }
+            & h1{
+                margin: 0;
+                font-size: var(--font-size);
+                padding: 10px 0px
+            }
+        }
 
-    /* Navegación de la app */
-    .nav {
-        grid-area: nav;
-        display: flex;
-        justify-content: center;
-    }
+        /* Navegación de la app */
+        & nav {
+            grid-area: nav;
+            display: flex;
+            justify-content: center;
 
-    .nav a {
-        display: grid;
-        font-size: 1rem;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 20px;
-        transition: color 0.2s linear;
-    }
+            & a {
+                display: grid;
+                font-size: 1rem;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 20px;
+                transition: color 0.2s linear;
+            }
+        }
 
-    /* Opciones */
-    .option{ 
-        grid-area: option;
-        justify-content: end;
-    }
-    
-    .option i{
-        cursor: pointer;
-        margin: 0 5px;
-        float: right;
-    }
+        /* Opciones */
+        & .option{ 
+            grid-area: option;
+            justify-content: end;
 
-    .option .btn-movil{ display: none; }
+            & i{
+                cursor: pointer;
+                margin: 0 5px;
+                float: right;
+            }
+
+            & .btn-movil{ display: none; }
+        }
+
+    }
 
     .nav-options{
         background: var(--c-primary);
@@ -160,16 +161,14 @@ Componente principal de la cabecera de página.
                 "firma option"
                 "nav nav "
             ;
-        }
 
-        .option .btn-movil{ display: initial; }
+            & .option .btn-movil{ display: initial; }
 
-        .nav {
-            display: none;
-        }
+            & nav {
+                display: none;
+            }
 
-        .navActive{
-            display: flex;
+            & .navActive{ display: flex; }
         }
     }
 

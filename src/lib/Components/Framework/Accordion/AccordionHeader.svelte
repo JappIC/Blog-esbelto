@@ -10,7 +10,16 @@ Componente AccordionHeader:
         icon = "fas fa-angle-down"
     ;
 </script>
-  
+
+<div on:click class={`accordion-section__header ${className}`}>
+    {#if open}
+        <i class="{icon}"></i>
+    {:else}
+        <i class="{icon} fa-rotate-270"></i>
+    {/if}
+    {title}
+</div>
+
 <style>
     .accordion-section__header {
         border-radius: 5px;
@@ -20,12 +29,3 @@ Componente AccordionHeader:
         cursor: pointer;
     }
 </style>
-  
-<div on:click class={`accordion-section__header ${className}`}>
-    {#if open}
-        <i class="{icon}"></i>
-    {:else}
-        <i class="{icon} fa-rotate-270"></i>
-    {/if}
-    {title}
-</div>

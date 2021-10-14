@@ -32,7 +32,7 @@ También contiene un botón imprimir que permite guardar en pdf.
     <p>{description}</p>
 </div>
 
-<style>
+<style lang="postcss">
     .visiting-card{
         background: var(--c-secondary);
         border: var(--border);
@@ -44,37 +44,37 @@ También contiene un botón imprimir que permite guardar en pdf.
         ;
         grid-template-rows:   auto 1fr;
         grid-template-columns: 250px 1fr;
-    }
 
-    figure{
-        grid-area: figure;
-        margin: 0;
-        padding: 0;
-    }
+        & figure{
+            grid-area: figure;
+            margin: 0;
+            padding: 0;
 
-    figure img{
-        grid-area: img;
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
+            & img{
+                grid-area: img;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
 
-    figure figcaption{
-        font-size: 12px;
-        text-align: right;
-    }
+        & figcaption{
+            font-size: 12px;
+            text-align: right;
+        }
 
-    h3{
-        grid-area: title;
-        margin: 0;
-        padding: var(--padding);
-        border-bottom: var(--border);
-    }
+        & h3{
+            grid-area: title;
+            margin: 0;
+            padding: var(--padding);
+            border-bottom: var(--border);
+        }
 
-    p{
-        padding: var(--padding);
-        grid-area: paragraph;
-        margin: 0;
+        & p{
+            padding: var(--padding);
+            grid-area: paragraph;
+            margin: 0;
+        }
     }
 
     /* Adaptación a movil */

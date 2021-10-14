@@ -14,7 +14,7 @@ Componente principal de pie de página.
 	<h4>{$appData.name} &copy;{year}</h4>
 </footer>
 
-<style>
+<style lang="postcss">
     footer {
         background: var(--c-primary);
         border-top: var(--border);
@@ -30,13 +30,13 @@ Componente principal de pie de página.
         left: 0;
         padding: 20px;
         z-index: 100;
-	}
 
-    footer h4{ 
-        font-family: var(--font-2);
-        font-weight: 400;
-        margin: 0;
-    }
+        & h4{ 
+            font-family: var(--font-2);
+            font-weight: 400;
+            margin: 0;
+        }
+	} 
 
     @media print
     {

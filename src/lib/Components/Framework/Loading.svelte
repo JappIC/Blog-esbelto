@@ -14,25 +14,25 @@ Recurso: https://animista.net/
     <div class="text">Cargando</div>
 </div>
 
-<style>
+<style lang="postcss">
     .loading{
         margin: 0 auto;
         text-align: center;
         font-size: 50px;
-    }
 
-    .text{
-        font-size: 1.8rem;
-        font-weight: bold;
-        text-align: center;
+        & .text{
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: center;
 
-        -webkit-animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
-	            animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
-    }
+            -webkit-animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+                    animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+        }
 
-    i{
-        -webkit-animation: slide-in-blurred-top 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) infinite alternate both;
-	        animation: slide-in-blurred-top 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) infinite alternate both;
+        & i{
+            -webkit-animation: slide-in-blurred-top 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) infinite alternate both;
+                animation: slide-in-blurred-top 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) infinite alternate both;
+        }
     }
     
     @-webkit-keyframes focus-in-contract {
@@ -50,6 +50,7 @@ Recurso: https://animista.net/
             color: var(--c-company);
         }
     }
+
     @keyframes focus-in-contract {
         0% {
             letter-spacing: 1em;
@@ -64,7 +65,6 @@ Recurso: https://animista.net/
             color: var(--c-company);
         }
     }
-
 
     @-webkit-keyframes slide-in-blurred-top {
         0% {
@@ -88,6 +88,7 @@ Recurso: https://animista.net/
             color: var(--c-company);
         }
     }
+    
     @keyframes slide-in-blurred-top {
         0% {
             -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);

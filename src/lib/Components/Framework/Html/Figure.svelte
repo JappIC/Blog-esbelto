@@ -8,7 +8,7 @@ Un componente para contenido multimedia
     export let 
         src,
         alt,
-        figcaption
+        figcaption = undefined
     ;
 </script>
 
@@ -19,21 +19,21 @@ Un componente para contenido multimedia
     {/if}
 </figure>
 
-<style>
+<style lang="postcss">
     figure{
         margin: 0;
         padding: 0;
-    }
 
-    figure img{
-        grid-area: img;
-        height: auto;
-        width: 100%;
-    }
+        & img{
+            grid-area: img;
+            height: auto;
+            width: 100%;
+        }
 
-    figure figcaption{
-        font-size: 12px;
-        text-align: right;
+            & figcaption{
+            font-size: 12px;
+            text-align: right;
+        }
     }
 
     .cover img{

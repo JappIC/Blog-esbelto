@@ -5,7 +5,6 @@ Componente TabPanel:
 
 <script>
 	import { getContext } from 'svelte';
-
 	import { TABS } from './Tabs.svelte';
 
 	const panel = {};

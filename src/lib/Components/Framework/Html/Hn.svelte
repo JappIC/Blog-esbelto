@@ -48,8 +48,4 @@ Por ahora se podría hacer ese comportamiento con if.
         padding-left: var(--padding);
         text-align: left;
     }
-
-    @media (min-width: 0px) and (max-width: 767px) {
-        
-    }
 </style>

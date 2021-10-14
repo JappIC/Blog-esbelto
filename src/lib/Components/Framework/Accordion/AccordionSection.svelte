@@ -21,18 +21,6 @@ Componente AccordionSection:
     $: open = $selected === key;
 </script>
 
-<style>
-
-    .accordion-section{
-        background: var(--c-secondary);
-        margin: 10px 0;
-    }
-
-    .accordion-section .contenedor{
-        padding: 25px;
-    }
-</style>
-  
 <li class={`accordion-section ${className}`}>
     <Header on:click={handleChange.bind(null, key)} {title} {open} />
     {#if open}
@@ -41,3 +29,16 @@ Componente AccordionSection:
         </div>
     {/if}
 </li>
+
+<style lang="postcss">
+
+    .accordion-section{
+        background: var(--c-secondary);
+        margin: 10px 0;
+
+        & .contenedor{
+            padding: 25px;
+        }
+    }
+    
+</style>

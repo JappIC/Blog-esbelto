@@ -88,7 +88,7 @@ Componente Article:
     </footer>
 </article>
 
-<style>
+<style lang="postcss">
     article {
         display: grid;
         grid-template-columns: 1fr;
@@ -96,7 +96,7 @@ Componente Article:
         transition: var(--transition);
     }
 
-    a{
+    a {
         color: var(--c-text);
     }
 

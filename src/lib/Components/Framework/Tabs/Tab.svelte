@@ -13,6 +13,10 @@ Componente Tab:
 	registerTab(tab);
 </script>
 
+<button class:selected="{$selectedTab === tab}" on:click="{() => selectTab(tab)}">
+	<slot></slot>
+</button>
+
 <style>
 	
     button {
@@ -35,7 +39,3 @@ Componente Tab:
         color: var(--c-company);
 	}
 </style>
-
-<button class:selected="{$selectedTab === tab}" on:click="{() => selectTab(tab)}">
-	<slot></slot>
-</button>

@@ -26,7 +26,11 @@ Componente Accordion:
         selected
     });
 </script>
-  
+
+<ul class={`accordion ${className}`}>
+    <slot />
+</ul>
+
 <style>
     .accordion {
         list-style: none;
@@ -34,7 +38,3 @@ Componente Accordion:
         padding: 0;
     }
 </style>
-  
-<ul class={`accordion ${className}`}>
-    <slot />
-</ul>
