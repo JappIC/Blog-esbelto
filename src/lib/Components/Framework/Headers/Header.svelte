@@ -21,7 +21,7 @@ Por ahora se podría hacer ese comportamiento con if.
     <slot/>
 </header>
 
-<style>
+<style lang="postcss">
     header{
         background: var(--c-secondary);
         color: var(--c-text);
@@ -30,24 +30,24 @@ Por ahora se podría hacer ese comportamiento con if.
         text-align: center;
         border-top: var(--border);
         border-bottom: var(--border);
-    }
 
-    header h1{
-        color: var(--c-company);
-        font-size: 6vw;
-        font-weight: 200;
-        margin: 0;
-        padding: 0;
+        & h1{
+            color: var(--c-company);
+            font-size: 6vw;
+            font-weight: 200;
+            margin: 0;
+            padding: 0;
+        }
     }
 
     /* Adaptación tableta */
     @media (min-width: 0px) and (max-width: 767px) {
         header{
             padding: 50px 5vw;
-        }
 
-        header h1{
-            font-size: 8vw;
+            & h1{
+                font-size: 8vw;
+            }
         }
     }
 </style>
