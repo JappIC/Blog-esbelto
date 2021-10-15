@@ -49,8 +49,10 @@ category: Componente
 </Container>
 
 <Container class="medium padding">
-    <Hn type="h2">Ejemplo:</Hn>
+    <Hn type="h2">Ejemplo: 1</Hn>
     <Header title="ESBELTO">
         <p>Una web desarrollada con el FW Svelte Kit</p>
     </Header>
+    <Hn type="h2">Ejemplo: 2</Hn>
+    <Header title="ESBELTO" src="/img/fondo-lienzo.jpg" />
 </Container>

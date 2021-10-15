@@ -36,6 +36,7 @@ La página principal de la aplicación
     import Btn from '$lib/Components/Framework/Html/Btn.svelte';
     import Figure from '$lib/Components/Framework/Html/Figure.svelte';
     import Signage from '$lib/Components/Framework/Signage.svelte';
+    import CardFlip from '$lib/Components/Framework/Cards/CardFlip.svelte';
 
     let componentes= [
         'Accordion', 'Articles', 'Comments', 'Headers', 'Accordion', 
@@ -66,6 +67,10 @@ La página principal de la aplicación
 <section class="page pg-home">
     <Header title={$appData.name}>
         <p>Una web desarrollada con el FW Svelte Kit</p>
+        <Btn class="warning" href="www.google.es">Botón neon</Btn>
+        <Btn class="positive" href="www.google.es">Botón neon</Btn>
+        <Btn class="error" href="www.google.es">Botón neon</Btn>
+        <Btn href="www.google.es">Botón neon</Btn>
     </Header>
 
     <Container class="medium padding" transition=true>

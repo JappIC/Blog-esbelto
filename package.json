@@ -1,6 +1,6 @@
 {
   "name": "esbelto",
-  "version": "0.2.13",
+  "version": "0.2.14",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",

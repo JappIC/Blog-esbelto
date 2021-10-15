@@ -68,7 +68,10 @@ category: Componente
         </div>
         <div>
             <Hn type="h3">Botón</Hn>
-            <Btn>Ejemplo</Btn>
+            <Btn class="warning" href="www.google.es">Botón neon</Btn>
+            <Btn class="positive" href="www.google.es">Botón neon</Btn>
+            <Btn class="error" href="www.google.es">Botón neon</Btn>
+            <Btn href="www.google.es">Botón neon</Btn>
         </div>
     </Column>
     <Column class="col-4">

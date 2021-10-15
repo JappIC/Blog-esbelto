@@ -13,12 +13,20 @@ Por ahora se podría hacer ese comportamiento con if.
 
 <script>
     import { fly } from "svelte/transition";
-    export let title = "Título del header";
+    export let 
+        title = "Título del header",
+        src = undefined
+    ;
 </script>
 
 <header {...$$restProps} in:fly={{  y:-25, duration: 500, delay: 500 }} out:fly={{ y: -25, duration: 500 }} >
-    <h1>{title}</h1>
-    <slot/>
+    {#if src}
+        <img src={src} alt={title}>
+    {/if}
+    <div>
+        <h1>{title}</h1>
+        <slot/>
+    </div>
 </header>
 
 <style lang="postcss">
@@ -30,6 +38,20 @@ Por ahora se podría hacer ese comportamiento con if.
         text-align: center;
         border-top: var(--border);
         border-bottom: var(--border);
+        position: relative;
+        overflow: hidden;
+
+        & div{
+            z-index:1;
+        }
+
+        & img{
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+            z-index:0;
+        }
 
         & h1{
             color: var(--c-company);
@@ -37,6 +59,7 @@ Por ahora se podría hacer ese comportamiento con if.
             font-weight: 200;
             margin: 0;
             padding: 0;
+            z-index:1;
         }
     }
 
