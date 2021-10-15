@@ -2,7 +2,7 @@
 layout: article
 id: 8
 title: Componente Social Media
-userName: Autor
+userName: Japp
 img : https://cflvdg.avoz.es/default/2018/10/10/00121539198100228948492/Foto/tailandia.jpg
 description: El componente Social Media permite añadir un baner con las principales redes sociales.
 date: 2021/08/25

@@ -2,7 +2,7 @@
 layout: article
 id: 7
 title: Componente Signage
-userName: Autor
+userName: Japp
 img : https://jakubpolomski.com/wp-content/gallery/argentina/Argentina-Landscape-Photo-El-Chalten-110200PAT0327f.jpg
 description: El componente Signage permite añadir señalizaciones para notificaciones destacadas.
 date: 2021/08/24

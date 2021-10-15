@@ -2,7 +2,7 @@
 layout: article
 id: 9
 title: Componente Visiting Card
-userName: Autor
+userName: Japp
 img : https://www.astrobitacora.com/wp-content/uploads/2017/09/milky-way.jpg
 description: El componente Visiting Card permite añadir una tarjeta de visita. Ideal para hacer una reseña del autor del artículo.
 date: 2021/08/26

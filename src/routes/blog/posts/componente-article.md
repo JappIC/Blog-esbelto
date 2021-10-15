@@ -2,7 +2,7 @@
 layout: article
 id: 11
 title: Componente Article
-userName: Autor
+userName: Japp
 img : https://www.wkmradio.com/wp-content/uploads/2019/04/reyleon.jpg
 description: El componente Article es el encargado de mostrar los artículos por buble como de forma individual.
 date: 2021/08/27

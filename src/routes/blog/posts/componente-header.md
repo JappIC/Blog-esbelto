@@ -2,7 +2,7 @@
 layout: article
 id: 1
 title: Componente Header
-userName: Autor
+userName: Japp
 img : https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/24701-nature-natural-beauty.jpg/1280px-24701-nature-natural-beauty.jpg
 description: El componente Header es el encargado de mostrar una cabesera en las páginas de tu app.
 date: 2021/08/18

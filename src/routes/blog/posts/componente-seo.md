@@ -2,7 +2,7 @@
 layout: article
 id: 5
 title: Componente Seo
-userName: Autor
+userName: Japp
 img : https://iso.500px.com/wp-content/uploads/2014/06/W4A2827-1-3000x2000.jpg
 description: El componente Seo contiene la etiqueta svelte:head que permite formatear el head de los documentos.
 date: 2021/08/22

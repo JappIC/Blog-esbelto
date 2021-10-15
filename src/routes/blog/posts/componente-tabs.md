@@ -2,7 +2,7 @@
 layout: article
 id: 12
 title: Componente Tabs
-userName: Autor
+userName: Japp
 img : https://fotografias.lasexta.com/clipping/cmsimages01/2019/06/04/3EC08BDA-7BE1-4413-A831-277039B478B9/default.jpg?crop=4279,2408,x0,y577&width=1900&height=1069&optimize=low
 description: El componente Tabs permite generar contenido que es visible dependiendo de la pestaña seleccionada.
 date: 2021/08/28

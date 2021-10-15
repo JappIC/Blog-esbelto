@@ -2,7 +2,7 @@
 layout: article
 id: 13
 title: Componentes Html
-userName: Autor
+userName: Japp
 img : https://kaikucaffelatte.com/blog/wp-content/uploads/2020/03/shutterstock_510679489-scaled.jpg
 description: Los componente Html son etiquetas html configuradas como componentes Svelte.
 date: 2021/08/30
@@ -20,7 +20,7 @@ category: Componente
     import Seo from '$lib/Components/Framework/Seo.svelte';
     import Container from '$lib/Components/Framework/Container.svelte';
     import Column from '$lib/Components/Framework/Column.svelte';
-    import { Iframe, Hn, List, Btn, Figure, Input, InputCheck, InputRadio, Label, Select, Textarea } from '$lib/Components/Framework/Html/html.js';
+    import { Iframe, Hn, List, Btn, Figure, Input, InputCheck, InputRadio, Label, Select, Textarea, Progress } from '$lib/Components/Framework/Html/html.js';
     import Signage from '$lib/Components/Framework/Signage.svelte';
     import { theme, selectedTheme } from '$lib/stores/theme.js'
 
@@ -94,7 +94,7 @@ category: Componente
             <InputRadio id="woman" name="gender" value="tercera"/>
         </div>
     </Column>
-    <Column class="col-3">
+    <Column class="col-4">
         <div>
             <Hn type="h3">Label</Hn>
             <Label forr="name" icon="far fa-address-card" text="Nombre"/>
@@ -109,6 +109,15 @@ category: Componente
         <div>
             <Hn type="h3">Textarea</Hn>
             <Textarea />
+        </div>
+        <div>
+            <Hn type="h3">Barra de progreso:</Hn>
+            <Label forr="progress1" text="Ejemplo 1"/>
+            <Progress id="progress1" max="100" value="35"> 35% </Progress>
+            <Label forr="progress2" text="Ejemplo 2"/>
+            <Progress id="progress2" max="100" value="70"> 70% </Progress>
+            <Label forr="progress3" text="Ejemplo 3"/>
+            <Progress id="progress3" max="100" value="98"> 98% </Progress>
         </div>
     </Column>
 </Container>

@@ -2,7 +2,7 @@
 layout: article
 id: 2
 title: Componente Column
-userName: Autor
+userName: Japp
 img : https://ae01.alicdn.com/kf/HTB1AsdJl9tYBeNjSspkq6zU8VXaq/P-ster-de-tela-personalizado-de-paisajes-naturales-de-bosque-italiano-decoraci-n-de-pared-para.jpg_Q90.jpg_.webp
 description: El componente Column permite clasificar contenido en columnas.
 date: 2021/08/19

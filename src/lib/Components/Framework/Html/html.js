@@ -9,3 +9,4 @@ export { default as Select }  from './Select.svelte';
 export { default as Textarea }  from './Textarea.svelte';
 export { default as InputCheck }  from './InputCheck.svelte';
 export { default as InputRadio }  from './InputRadio.svelte';
+export { default as Progress }  from './Progress.svelte';

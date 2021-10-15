@@ -2,7 +2,7 @@
 layout: article
 id: 6
 title: Componente Share
-userName: Autor
+userName: Japp
 img : https://www.publicdomainpictures.net/pictures/30000/velka/evening-landscape-13530956185Aw.jpg
 description: El componente Share permite añadir iconos de redes sociales para compartir publicaciones.
 date: 2021/08/23

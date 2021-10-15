@@ -2,7 +2,7 @@
 layout: article
 id: 4
 title: Componente Loading
-userName: Autor
+userName: Japp
 img : https://chiledescentralizado.cl/wp-content/uploads/2016/03/landscape-04.jpg
 description: El componente Loading permite mostra una animación de carga cuando sea necesaria.
 date: 2021/08/21

@@ -2,7 +2,7 @@
 layout: article
 id: 10
 title: Componente Accordion
-userName: Autor
+userName: Japp
 img : https://cflvdg.avoz.es/default/2018/10/10/00121539198100228948492/Foto/tailandia.jpg
 description: El componente Accordion permite añadir un acordeon para ocultar o mostrar texto al pulsar sobre el título.
 date: 2021/08/26

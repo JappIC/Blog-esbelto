@@ -2,7 +2,7 @@
 layout: article
 id: 3
 title: Componente Container
-userName: Autor
+userName: Japp
 img : https://images.indianexpress.com/2017/04/nature-tree_1200.jpg
 description: El componente Container permite clasificar contenido en diferes tamaños.
 date: 2021/08/20
