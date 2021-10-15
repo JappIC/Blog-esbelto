@@ -36,7 +36,7 @@ La página principal de la aplicación
     import Btn from '$lib/Components/Framework/Html/Btn.svelte';
     import Figure from '$lib/Components/Framework/Html/Figure.svelte';
     import Signage from '$lib/Components/Framework/Signage.svelte';
-    import CardFlip from '$lib/Components/Framework/Cards/CardFlip.svelte';
+    import CardProject from '$lib/Components/Framework/Cards/CardProject.svelte';
 
     let componentes= [
         'Accordion', 'Articles', 'Comments', 'Headers', 'Accordion', 
@@ -72,6 +72,11 @@ La página principal de la aplicación
         <Btn class="error" href="www.google.es">Botón neon</Btn>
         <Btn href="www.google.es">Botón neon</Btn>
     </Header>
+
+    <Container class="large padding" transition=true>
+        <CardProject class="reverse m-top"/>
+        <CardProject class="m-top"/>
+    </Container>
 
     <Container class="medium padding" transition=true>
         <p>

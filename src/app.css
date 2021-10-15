@@ -23,9 +23,10 @@ Write your global styles here, in PostCSS syntax
   --c-tertiary: rgba(243, 243, 243, 1);
   --c-border: rgba(197, 197, 197, 1);
   --border: 1px solid var(--c-border);
-  --c-shadow: rgba(179, 179, 179, 1);
-  --shadow: 0 0 5px 1px var(--c-shadow);
-  --shadow-hover: 0 0 1px 0px var(--c-shadow);
+  --radius: 5px;
+  --c-shadow: rgba(0, 0, 0, 1);
+  --shadow: 0 10px 30px -15px var(--c-shadow);
+  --shadow-hover: 0 10px 25px -10px var(--c-shadow);
   --margin: 25px;
   --padding: 25px;
   --margin-2: 75px;
@@ -64,8 +65,6 @@ Write your global styles here, in PostCSS syntax
   --c-tertiary: rgba(1, 42, 74, 1);
   --c-text: rgba(202, 209, 235, 1);
   --c-link: rgba(202, 209, 235, 1);
-  --shadow: 0;
-  --shadow-hover: 0;
   --c-border: rgba(105, 116, 156, 1);
   --border: 1px solid var(--c-border);
 }
@@ -77,8 +76,6 @@ Write your global styles here, in PostCSS syntax
   --c-tertiary: rgba(33, 37, 41, 1);
   --c-text: rgba(202, 209, 235, 1);
   --c-link: rgba(202, 209, 235, 1);
-  --shadow: 0;
-  --shadow-hover: 0;
   --c-border: rgba(108, 117, 125, 1);
   --border: 1px solid var(--c-border);
 }
@@ -114,6 +111,25 @@ a {
   text-decoration: none;
   transition: var(--transition);
 }
+
+/*PROBAR LINEA EN LOS ENLACES*/
+
+/*a::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 1px;
+    position: relative;
+    bottom: 0.37em;
+    background-color: var(--c-company);
+    transition: var(--transition);
+    opacity: 0.5;
+}
+
+a:hover ::after {
+    width: 100%;
+}
+}*/
 
 a:hover {
   color: var(--c-link-hover);

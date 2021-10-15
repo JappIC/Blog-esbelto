@@ -32,6 +32,10 @@ Una página estática para tener un registro de la versiones de Esbelto.
     </Headers>
 
     <Container class="medium padding" transition=true>
+        <Hn type="h2" class="title">V0.3.15</Hn>
+        <p>Se añadió un nuevo componente CardProject</p>
+        <Hn type="h2" class="title">V0.2.14</Hn>
+        <p>Se optimizó el css usando postcss-nested</p>
         <Hn type="h2" class="title">V0.2.13</Hn>
         <p>Se optimizó el css usando postcss-nested</p>
         <Hn type="h2" class="title">V0.2.12</Hn>

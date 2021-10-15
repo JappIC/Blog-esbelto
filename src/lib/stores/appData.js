@@ -1,6 +1,6 @@
 import { writable } from 'svelte/store';
 
 export const appData = writable({
-    name: "Esbelto",
+    name: "ESBELTO",
     logo: "/img/svelte-logo.svg"
 });

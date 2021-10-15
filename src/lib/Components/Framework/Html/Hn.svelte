@@ -30,9 +30,15 @@ Por ahora se podría hacer ese comportamiento con if.
 {/if}
 
 <style>
+
+    h1,h2,h3,h4,h5,h6{
+        align-items: center;
+        display: flex;
+    }
+
     h1 {
         font-size: 1.8rem;
-        font-weight: 200; 
+        font-weight: 200;
     }
     h2 {
         font-size: 1.6rem;
@@ -44,8 +50,16 @@ Por ahora se podría hacer ese comportamiento con if.
     }
 
     .title{
-        border-bottom: 1px solid var(--c-company);
-        padding-left: var(--padding);
         text-align: left;
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+   .title::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        margin-left: 20px;
+        background-color: var(--c-company);
     }
 </style>
