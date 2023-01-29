@@ -19,14 +19,16 @@ Una tarjeta para presentar proyectos.
 
 <article {...$$restProps}>
     <div>
-        <a class="category" href="www.google.es">{category}</a>
+        <a href={`/blog/category/${category}`}>
+            {category}
+        </a> 
         <h3>
             <a href={link}>{title}</a>
         </h3>
         <p class="description">{description}</p>
         <ul>
             {#each tags as tag}
-                <li><a href={link}> {tag} </a></li>
+                <li><a href={`/blog/tags/${tag}`}> {tag} </a></li>
             {/each}
         </ul>
         <div>

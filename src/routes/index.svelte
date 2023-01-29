@@ -50,6 +50,8 @@ La página principal de la aplicación
         'Textarea'
     ];
 
+    let tags = ["Tarjeta", "Diseño", "Cards", "Html"];
+
     let activeTitle = "Header One";
     const handleAccordionChange = event => {
         activeTitle = event.detail;
@@ -67,26 +69,41 @@ La página principal de la aplicación
 <section class="page pg-home">
     <Header title={$appData.name}>
         <p>Una web desarrollada con el FW Svelte Kit</p>
-        <Btn class="warning" href="www.google.es">Botón neon</Btn>
-        <Btn class="positive" href="www.google.es">Botón neon</Btn>
-        <Btn class="error" href="www.google.es">Botón neon</Btn>
-        <Btn href="www.google.es">Botón neon</Btn>
     </Header>
 
     <Container class="large padding" transition=true>
-        <CardProject class="reverse m-top"/>
-        <CardProject class="m-top"/>
-    </Container>
+        <CardProject
+            class="m-top-2 m-bottom-2 reverse"
+            title ="¿Que es esbelto?"
+            description ="Esbelto es una web desarrollada usando el Framework SvelteKit . Este proyecto se hace para afianzar conocimientos de Html, Css, JS y aprender el desarrollo de aplicaciones usando un FW de JS como compilador."
+            link ="http://localhost:3000/blog/category/Componente"
+            web ="https://github.com/JappIC/Blog-esbelto"
+            github ="https://github.com/JappIC/Blog-esbelto"
+            tags = {tags}
+            img ="/img/code.png"
+            category ="Componente"
+        />
 
-    <Container class="medium padding" transition=true>
-        <p>
-            <span class="bold">Esbelto</span> es una web desarrollada usando el Framework <a class="bold" href="https://kit.svelte.dev/" target="_blanck">SvelteKit</a> .
-            Este proyecto se hace para afianzar conocimientos de Html, Css, JS y aprender el desarrollo de 
-            aplicaciones usando un FW de JS como compilador.
+        <p class="m-top-2 m-bottom-2">
+            Esbelto está pensado para tener una base muy simple para comenzar a desarrollar una web.
+            La misma web funciona como documentación. En el enlace "blog" del menú principal podrás ver que los 
+            artículos hacen referencia a los componentes de Esbelto.
         </p>
+
+        <CardProject
+            class="m-top-2 m-bottom-2"
+            title ="Más de 20 componentes"
+            description ="Esbelto contiene más de 20 componentes para desarrollar webs de forma ágil y fluida. Componentes prediseñados y flexibles con clases css adicionales."
+            link ="http://localhost:3000/blog/category/Componente"
+            web ="https://github.com/JappIC/Blog-esbelto"
+            github ="https://github.com/JappIC/Blog-esbelto"
+            tags = {tags}
+            img ="/img/code.png"
+            category ="Componente"
+        />
     </Container>
 
-    <Container class="large" transition=true>
+    <Container class="large m-top-2 m-bottom-2" transition=true>
         <Column class="col-3">
             <Figure src="/img/esbelto-azul.png" alt="Azul"/>
             <Figure src="/img/esbelto-defecto.png" alt="defecto"/>
@@ -95,14 +112,9 @@ La página principal de la aplicación
     </Container>
 
     <Container class="medium padding" transition=true>
-        <p>
-            Esbelto está pensado para tener una base muy simple para comenzar a desarrollar una web.
-            La misma web funciona como documentación. En el enlace "blog" del menú principal podrás ver que los 
-            artículos hacen referencia a los componentes de Esbelto.
-        </p>
 
         <Hn type="h2" class="m-top-2 title">Algunos componentes de esbelto:</Hn>
-        <p>Esbelto contiene más de 20 componentes preparados para reutilizar en toda la web. A continuación te muestro 5 ejemplo</p>
+        <p>Esbelto contiene más de 20 componentes preparados para reutilizar en toda la web. A continuación te muestro 6 ejemplo</p>
         <Column class="col-2 m-top-2">
             <div>
                 <Hn type="h3">Componente Accordion:</Hn>
@@ -168,6 +180,17 @@ La página principal de la aplicación
                 link="/profile/"
                 description="Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen."
             />
+
+            <div class="m-top-2 m-bottom-2">
+                <Hn type="h3">Componente Btn:</Hn>
+                <p>El componente Btn permite añadir un botón html de tipo "a" o "button" y contiene clases para dar formato dependiendo de lo que necesites.</p>    
+                <div class="text-center">
+                    <Btn class="warning" href="www.google.es">Botón advertencia</Btn>
+                    <Btn class="positive" href="www.google.es">Botón positivo</Btn>
+                    <Btn class="error" href="www.google.es">Botón error</Btn>
+                    <Btn href="www.google.es">Botón normal</Btn>
+                </div>
+            </div>
         </div>
 
         <Column class="col-2 m-top-2">
